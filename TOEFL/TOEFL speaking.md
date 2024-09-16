@@ -1,8 +1,12 @@
 test test
 
 # Q1
+## 备考思路：不需要写稿纸。回答结构：同意/不同意——论点1（大）——论点2（小）。根据描绘==事实/理由-原因-后续后果==三个步骤展开一个论点。
+
 + ==个人/社会==
-    + ==个人的物质/精神==
+    + ==个人的物质/精神(幸福感，面对困难更加自信)==
+    
++ ==收费/不收费==
 
 + ==经济/文化/政治/道德==
 
@@ -53,11 +57,17 @@ if...
 ---
 
 # Q2
-+ **The reading passage proposes** a change to campus policy. 
++ 做题要义：
+    1.审题：先导语出来时，可以先记录(letter/policy);
+    2.用一个短语概括阅读主题(the reading passage is about schedule changes for stoping evening learning)
+    3.审两个理由，==一次性把文章看完再记！== 一般在passage后半段，前半段都是寒暄
 
-**In particular, it suggests that** the school should hire more professional librarians to assist the busy library.
+---
++ **The reading passage is a anouncement/policy about** campus policy. 
 
-+ **The man in the conversation is against this idea.**
+**In particular, it mentions that** the school should hire more professional librarians to assist the busy library.
+
++ **The man in the conversation agrees this idea.**
 
 ==says that完整 + if假设==
 (Say/if)
@@ -72,20 +82,15 @@ if...
 ---
 
 # Q3
-## 对比实验类型
-1.因变量
-2.实验做什么
-3.结果
+## 思路：开头直接记主题词，直接飞速略读直接找到定义，慢读理解概念，飞速读完后续文章再记录定义（记录词语即可，答题时连点成面）
 
-## 故事
-起因-发展-高潮-结果
 
-![alt text](image.png)
-**sth is refering to ...**
+**sth is a concept that ...**
 **The reading passage goes into detail about** mimicry, **which is** when oneanimal will try to copy some aspect of another animal to survive. 
 
 **1.He gives us 2 examples to explain that.**
 **2.The prefosseor provides us with his personal experience.**
+*3. The professor gives us a example about this that*
 
 **At first**,the lecturer talks about the king snake. Now, this snake isn’t poisonous,but it knows how to change its skin to red, so it looks like a coral snake,which is poisonous. 
 
@@ -160,15 +165,20 @@ puzzled：困惑的、烦恼的。
 
 # Writing
 ## 10mins
-+ ==I strongly convinced that...And I agree with(总结他的观点)==
-+ ==On top of that, I want to add that...(自己的新观点)==
-    + 观点 + 解释/延伸 + 举例
+### 
++ 思路1（高分）:跟speaking task1一样的思路，描绘事实——原因——后续后果，第二点相处一个论点即可，想不出来不要紧，写到时候一般都会有思路了。
+
++ 思路2（保分）: 这种较为容易，不同之处在第二个论点是反驳反方，找出对方的不足之处(while Paul argued that free public transpotation makes it accessible to everyone, he overlooks the fact that...)
+
+
+
++ ==I strongly believed that...Kelly made an excellent point that(总结他的观点)==
++ ==Additionally, I would like to emphasize that...(自己的新观点)==
+    + 观点 + 原因 + 后续后果
     + 观点 + 原因解释（具像化场景）
     + 观点 + 假设 **If...we could..rather than...**
     + 观点 + 对比 **By contrast...**
-+ ==Although what ... argued seems to be resonable, what he did not mention is that...==
-+ ==Although what ... mentioned seems to be resonable, he overlooks a vital point that...==
-or
++ ==...arugued that......, he overlooks the fact that...==
 + ==In conclusion, I definately think that...==
 
 poverty alleviation 扶贫
@@ -185,7 +195,10 @@ rural rivitalizaion strategy 乡村振兴战略
 social security 社会保障
 faculty/facility
 
+
 ## 20mins
++ 40s左右记录首段基本信息（可以写出写作首段的程度）， 细读每段开始读第一段（剩2:10左右），第二段（剩1:30左右），第三段（剩0:45左右）
+
 **The reading passage proposes three agruements about** incentive programs that reward employees for chieving certain health-related goals, **while the prefosser in the listening material completely refutes the passage.**
 
 **Firstly, the article states that** incentive program help emplyees to healthy lifestyle because it offers them extra motivation such as rewards. **Nonetheless, the prefessor assert that** incentive program only has less motivation. The research mentioned by writter is immediate result, while in long term studies, the participants were likely to go back to their habits, such as smoking or regaining lost weight.
