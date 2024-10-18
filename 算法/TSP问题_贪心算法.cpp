@@ -20,7 +20,7 @@ void TSP(const vector<vector<int> >& A, int N, int start){
     visited[current] = true; // 标记当前城市为已访问
     int totalDistance = 0; // 总距离
 
-    cout << "路径: " << current + 1;
+    //cout << "路径: " << current + 1;
 
     //N个城市，要链接N-1段路
     for(int i = 0; i < N - 1; ++i){
@@ -52,13 +52,14 @@ void TSP(const vector<vector<int> >& A, int N, int start){
 }
 
 int main(){
-    int N;
-    cout << "输入城市个数:" << endl;
-    cin >> N;
+    int N,S;    //城市个数和开始城市
+    //cout << "输入城市个数:" << endl;
+    cin >> N >> S;
 
+    //创建一个N x N的二维向量，所有元素初始值为0
     vector<vector<int> > distances(N, vector<int>(N, 0));
 
-    cout << "输入城市之间的距离(0表示城市间不通):" << endl;
+    //cout << "输入城市之间的距离(0表示城市间不通):" << endl;
     for(int i = 0; i < N; ++i){
         for(int j = 0; j < N; ++j){
             cin >> distances[i][j];
@@ -70,7 +71,7 @@ int main(){
     }
 
     // 从第一个城市开始旅行
-    TSP(distances, N, 0);
+    TSP(distances, N, S);
 
     return 0;
 }
