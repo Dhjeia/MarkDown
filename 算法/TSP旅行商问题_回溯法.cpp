@@ -26,11 +26,11 @@ void tsp(int currentCity, int count, int cost, int startCity) {
 }
 
 int main() {
-    cout << "请输入城市数量 N: ";
-    cin >> N;
+    //cout << "请输入城市数量 N 和 开始城市: ";
+    int n;
+    cin >> N >> n;
 
-    // 输入距离矩阵
-    cout << "请输入距离矩阵：" << endl;
+    //cout << "请输入距离矩阵：" << endl;
     for (int i = 0; i < N; ++i) {
         for (int j = 0; j < N; ++j) {
             cin >> dist[i][j];
@@ -43,11 +43,11 @@ int main() {
     }
 
     // 从第 0 个城市开始旅行
-    visited[0] = true; // 起点城市标记为已访问
-    tsp(0, 1, 0, 0); // 当前在第 0 城市，已经访问了 1 个城市，当前总成本为 0
+    visited[n] = true; // 起点城市标记为已访问
+    tsp(n, 1, 0, n); // 当前在第 0 城市，已经访问了 1 个城市，当前总成本为 0
 
     // 输出最小路径长度
-    cout << "最短路径的长度是: " << minCost << endl;
+    cout << minCost;
 
     return 0;
 }

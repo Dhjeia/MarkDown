@@ -1,18 +1,24 @@
 #include <iostream>
-#include <cmath> // 用于 abs 函数
+#include <cmath>
 
 using namespace std;
 
-const int MAX_N = 15; // 假设 N 的最大值为 15
+const int MAX_N = 15;
 int queens[MAX_N];    // queens[i] 表示第 i 行皇后所在的列号
 int solutions = 0;    // 解的数量
-int N;                // 棋盘大小（即皇后数量）
+int N;                // 棋盘大小
 
 // 检查 (row, col) 是否是安全的放置位置
 bool isValid(int row, int col) {
     //逐行检查
     for (int i = 0; i < row; ++i) {
         // 检查同列和对角线冲突
+        /*
+        于两位皇后 (row1, col1) 和 (row2, col2) 来说，如果它们在同一对角线上，则满足条件：
+
+        主对角线：row1 - col1 == row2 - col2 （行与列的差相同）
+        副对角线：row1 + col1 == row2 + col2 （行与列的和相同）
+        */
         if (queens[i] == col || abs(queens[i] - col) == abs(i - row)) {
             return false;
         }
@@ -20,9 +26,9 @@ bool isValid(int row, int col) {
     return true;
 }
 
-// 尝试放置皇后
+//放置皇后
 void placeQueens(int row) {
-    if (row == N) {  // 如果已经放置了 N 个皇后，说明找到一个解
+    if (row == N) {  //如果已经放置了 N 个皇后，说明找到一个解
         ++solutions;
         return;
     }
@@ -44,9 +50,8 @@ int main() {
         queens[i] = -1;
     }
 
-    placeQueens(0);  // 从第 0 行开始放置皇后
+    placeQueens(0);  //从第 0 行开始放置皇后
 
-    // 输出解的数量
     cout << "一共有 " << solutions << " 种解法。" << endl;
 
     return 0;
