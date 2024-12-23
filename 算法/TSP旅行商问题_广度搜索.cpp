@@ -11,8 +11,8 @@ const int INF = numeric_limits<int>::max(); // 无穷大表示不可达
 // 结构体表示节点
 struct Node {
     int level;          // 当前深度
-    int cost;          // 当前花费
-    int bound;         // 当前界限
+    int cost;           // 当前花费
+    int bound;          // 当前界限
     int path[MAX_CITIES]; // 当前路径
 };
 
@@ -60,6 +60,21 @@ void printPath(const Node& node, int level) {
     }
 }
 
+// 输出距离矩阵
+void printCostMatrix(const int cost[MAX_CITIES][MAX_CITIES], int n) {
+    cout << "Distance Matrix:\n";
+    for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < n; ++j) {
+            if (cost[i][j] == INF) {
+                cout << "INF ";
+            } else {
+                cout << cost[i][j] << " ";
+            }
+        }
+        cout << endl;
+    }
+}
+
 // 解决TSP的函数
 void tsp(const int cost[MAX_CITIES][MAX_CITIES], int n) {
     // 初始化优先队列
@@ -71,7 +86,7 @@ void tsp(const int cost[MAX_CITIES][MAX_CITIES], int n) {
     fill(begin(root.path), end(root.path), -1);
     root.path[0] = 0; // 从城市0出发
     root.bound = calculateBound(cost, root, n);
-    
+
     pq.push(root);
     int minCost = INF;
 
@@ -86,8 +101,8 @@ void tsp(const int cost[MAX_CITIES][MAX_CITIES], int n) {
             if (finalCost < minCost) {
                 minCost = finalCost;
                 cout << "Minimum cost: " << minCost << endl;
-                // cout << "Path: ";
-                // printPath(currentNode, n - 1); // 输出路径
+                cout << "Path: ";
+                printPath(currentNode, n - 1); // 输出路径
             }
             continue;
         }
@@ -130,6 +145,7 @@ int main() {
     }
 
     int n = 4; // 这里城市数量固定为4
+    printCostMatrix(cost, n); // 输出距离矩阵
     tsp(cost, n);
 
     return 0;

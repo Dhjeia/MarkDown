@@ -47,7 +47,7 @@ int main() {
     tsp(n, 1, 0, n); // 当前在第 0 城市，已经访问了 1 个城市，当前总成本为 0
 
     // 输出最小路径长度
-    cout << minCost;
+    cout << "最小路径长度为: " << minCost;
 
     return 0;
 }
